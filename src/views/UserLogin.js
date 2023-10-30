@@ -40,7 +40,7 @@ const Login = () => {
     e.preventDefault();
   
     axios
-      .post("https://weak-lamb-shift.cyclic.app/api/user/login", {
+      .post("https://hungry-fawn-bandanna.cyclic.app/api/user/login", {
         Email: email,
         senha: senha,
       })

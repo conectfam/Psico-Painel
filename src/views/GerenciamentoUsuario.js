@@ -36,7 +36,7 @@ const columns = [
     const instituicaoNome = localStorage.getItem('instituicaoNome');
 
     // Make API request with the institution name as a parameter
-    axios.get(`https://weak-lamb-shift.cyclic.app/usuarios?instituicaoNome=${instituicaoNome}`)
+    axios.get(`https://hungry-fawn-bandanna.cyclic.app/usuarios?instituicaoNome=${instituicaoNome}`)
     .then(response => {
         if (response.data && Array.isArray(response.data)) {
             setUsuarios(response.data);
@@ -75,7 +75,7 @@ const handleSave = () => {
   // ... (seu código para salvar o usuário)
   
   
-    axios.put(`https://weak-lamb-shift.cyclic.app/cadastro_clientes/${editData.id}`, editData)
+    axios.put(`https://hungry-fawn-bandanna.cyclic.app/cadastro_clientes/${editData.id}`, editData)
       .then(response => {
         console.log(response.data);
         setEditIndex(-1);
@@ -88,7 +88,7 @@ const handleSave = () => {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`https://weak-lamb-shift.cyclic.app/usuarios/${id}`)
+    axios.delete(`https://hungry-fawn-bandanna.cyclic.app/usuarios/${id}`)
       .then(response => {
         console.log(response.data);
         carregarUsuarios();
