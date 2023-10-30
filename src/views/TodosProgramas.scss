@@ -1,0 +1,76 @@
+.form-col {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-btn {
+    background-color: #85BB32;
+    border-color: #85BB32;
+    margin-top: 25px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #2C3E10;
+    border-color: #2C3E10;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  .program-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  .active-program {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+  }  
+
+  .program-card-body {
+    text-align: center;
+  }
+  
+  .program-card-title {
+    font-weight: bold;
+  }
+  
+  .program-card-link {
+    color: #85BB32;
+    text-decoration: underline;
+  }
+  .table-link-cell {
+    max-width: 300px; // Defina a largura máxima que você deseja para a célula
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+
+.custom-btn {
+  background-color: #85BB32 !important;
+  border-color: #85BB32 !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #2C3E10 !important;
+    border-color: #2C3E10 !important;
+  }
+}
+
+.table-link-cell {
+  width: 100%; // Takes up all available space
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @media (max-width: 768px) {
+    max-width: 100px; // Adjust to a smaller size on mobile devices
+  }
+}

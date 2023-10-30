@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/bootstrap";
+
+.card-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  background-color: #f5f7fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.card-stats {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.text-center {
+  color: #333;
+}
+
+.table {
+  color: #333;
+}
