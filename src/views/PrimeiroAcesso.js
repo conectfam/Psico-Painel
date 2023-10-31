@@ -5,7 +5,7 @@ import axios from 'axios';
 const PrimeiroAcesso = () => {
   
   // Applying background image to the bodykkkk
-  document.body.style.backgroundImage = "url('https://imgur.com/CrlSHBe.png')";
+  document.body.style.backgroundImage = "url('https://imgur.com/fGJp4XO.png')";
   document.body.style.backgroundSize = 'cover';
   document.body.style.height = '100vh';
 
@@ -57,7 +57,7 @@ const PrimeiroAcesso = () => {
       <Col md={{ span: 6, offset: 3 }} style={{ marginTop: '50px' }}>
         <Card>
           <Card.Body>
-           <img src="https://imgur.com/qwGDNx6.png" style={{ width: '100%', height: 'auto', marginBottom: '5px' }} alt="logo" />
+           <img src="https://imgur.com/F7oe830.png" style={{ width: '100%', height: 'auto', marginBottom: '5px' }} alt="logo" />
            <hr style={{ borderTop: '1px solid #ccc', marginBottom: '20px' }} />
            
             <Card.Title as="h5" className="text-center">{!verified ? 'Primeiro Acesso' : 'Cadastro de Senha'}</Card.Title>
@@ -70,7 +70,7 @@ const PrimeiroAcesso = () => {
                     <Form.Label className="label-text">Email</Form.Label>
                     <Form.Control type="text" value={Email} onChange={(e) => setEmail(e.target.value)} />
                   </Form.Group>
-                  <Button className="login-button w-100" type="submit" style={{ backgroundColor: '#85BB32' }} onClick={verifyUser}>Verificar</Button>
+                  <Button className="login-button w-100" type="submit" style={{ backgroundColor: '#3E4095' }} onClick={verifyUser}>Verificar</Button>
                 </>
               ) : (
                 <>
@@ -78,7 +78,7 @@ const PrimeiroAcesso = () => {
                     <Form.Label>Senha</Form.Label>
                     <Form.Control type="password" value={Senha} onChange={(e) => setSenha(e.target.value)} />
                   </Form.Group>
-                  <Button className="login-button w-100" style={{ backgroundColor: '#85BB32' }} onClick={registerPassword}>Cadastrar senha</Button>
+                  <Button className="login-button w-100" style={{ backgroundColor: '#3E4095' }} onClick={registerPassword}>Cadastrar senha</Button>
                 </>
               )}
               {error && <Alert variant="danger" className="mt-3">{error}</Alert>}

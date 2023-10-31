@@ -65,13 +65,13 @@
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #85BB32;
+  background-color: #3E4095;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #2C3E10;
+  background-color: #0D0E20;
 }
 
 /* Adicionando regras de media query para responsividade */

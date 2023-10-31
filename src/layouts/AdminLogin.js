@@ -57,13 +57,13 @@ const Login = (props) => {
     <div>
     <NotificationAlert ref={notificationAlertRef} /> 
      
-    <div className={styles.container} style={{ backgroundImage: 'url(https://imgur.com/CrlSHBe.png.png)', backgroundSize: 'cover', Height: '100vh' }}>
+    <div className={styles.container} style={{ backgroundImage: 'url(https://imgur.com/fGJp4XO.png)', backgroundSize: 'cover', Height: '100vh' }}>
       <div className={styles.content}>
         <div className={styles.title}>
-        <img src="https://imgur.com/qwGDNx6.png" style={{ width: '100%', height: 'auto', marginBottom: '5px' }} alt="logo" />
+        <img src="https://imgur.com/F7oe830.png" style={{ width: '100%', height: 'auto', marginBottom: '5px' }} alt="logo" />
         <hr style={{ borderTop: '1px solid #ccc', marginBottom: '20px' }} />
           <div className={styles.text}>
-            LifeMed | Painel Administrativo
+            Connect Fam | Painel Administrativo
           </div>
           <div style={{ height: '20px' }}></div>
         </div>

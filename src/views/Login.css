@@ -12,12 +12,12 @@
 
 /* Styling the clickable text 'Primeiro acesso' */
 .clickable-text {
-  color: #85BB32;
+  color: #3E4095;
 }
 
 /* Styling and resizing the login button */
 .login-button {
-  background-color: #85BB32;
+  background-color: #3E4095;
   border: none;
   color: white;
   text-align: center;
@@ -33,12 +33,12 @@
 
 /* Changing the color when the button is hovered */
 .login-button:hover {
-  background-color: #2C3E10 !important;
+  background-color: #0D0E20 !important;
 }
 
 /* Changing the color when the button is clicked */
 .login-button:active {
-  background-color: #2C3E10 !important;
+  background-color: #0D0E20 !important;
 }
 
 /* Additional custom styles can go here */
