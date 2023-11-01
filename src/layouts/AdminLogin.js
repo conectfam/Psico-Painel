@@ -31,7 +31,7 @@ const Login = (props) => {
           notify("Credenciais Corretas!", "success");
           localStorage.setItem('token', response.data.token);
           localStorage.setItem('username', identificador); // Mudança aqui
-          localStorage.setItem('instituicanome', response.data.instituicaonome);
+          localStorage.setItem('instituicaoNome', response.data.instituicaoNome);
           localStorage.setItem('role', response.data.role);
 
           console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
