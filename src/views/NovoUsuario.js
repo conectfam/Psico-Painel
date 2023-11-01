@@ -312,7 +312,7 @@ const NRs = () => {
           </Alert>
         )}
         
-        <Button type="submit" variant="primary" className="mt-3" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Salvar</Button>
+        <Button type="submit" variant="primary" className="mt-3" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Salvar</Button>
       </Form>
     </Container>
   );

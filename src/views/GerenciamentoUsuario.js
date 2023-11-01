@@ -178,13 +178,13 @@ const handleSave = () => {
             </Table>
             {editIndex === selectedUser ? (
               <div>
-                <Button variant="success" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }} onClick={handleSave}>Salvar</Button>
-                <Button variant="warning" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }} onClick={handleCancel}>Cancelar</Button>
+                <Button variant="success" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }} onClick={handleSave}>Salvar</Button>
+                <Button variant="warning" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }} onClick={handleCancel}>Cancelar</Button>
               </div>
             ) : (
               <div>
-                <Button variant="primary" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }} onClick={() => handleEdit(selectedUser)}>Editar</Button>
-                <Button variant="danger" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }} onClick={() => handleDelete(usuarios[selectedUser].id)}>Deletar</Button>
+                <Button variant="primary" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }} onClick={() => handleEdit(selectedUser)}>Editar</Button>
+                <Button variant="danger" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }} onClick={() => handleDelete(usuarios[selectedUser].id)}>Deletar</Button>
         
               </div>
             )}

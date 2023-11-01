@@ -490,7 +490,7 @@ const NovaInstituicao = () => {
                         )}
                     </div>
                 ))}
-                <Button onClick={handleAddContato} style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Adicionar Contato</Button>
+                <Button onClick={handleAddContato} style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Adicionar Contato</Button>
             </Card.Body>
 
         </Card>
@@ -519,7 +519,7 @@ const NovaInstituicao = () => {
                 )}
               </div>
             ))}
-            <Button className="mt-2" onClick={handleAddUnidade} style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Adicionar Unidade</Button>
+            <Button className="mt-2" onClick={handleAddUnidade} style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Adicionar Unidade</Button>
           </Card.Body>
         </Card>
 
@@ -547,7 +547,7 @@ const NovaInstituicao = () => {
               )}
             </div>
           ))}
-          <Button onClick={handleAddSetor} className="mt-2" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Adicionar Setor</Button>
+          <Button onClick={handleAddSetor} className="mt-2" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Adicionar Setor</Button>
         </Card.Body>
       </Card>
 
@@ -577,7 +577,7 @@ const NovaInstituicao = () => {
               )}
             </div>
           ))}
-          <Button onClick={handleAddCargo} style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Adicionar Cargo</Button>
+          <Button onClick={handleAddCargo} style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Adicionar Cargo</Button>
         </Card.Body>
       </Card>
 
@@ -627,7 +627,7 @@ const NovaInstituicao = () => {
                       )}
                   </div>
               ))}
-              <Button onClick={handleAddUsuario} style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Adicionar Usuário</Button>
+              <Button onClick={handleAddUsuario} style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Adicionar Usuário</Button>
           </Card.Body>
       </Card>
 
@@ -638,7 +638,7 @@ const NovaInstituicao = () => {
     )}                 
 
 
-        <Button type="submit" style={{ backgroundColor: "#85BB32", borderColor: "#85BB32" }}>Registrar Instituição</Button>
+        <Button type="submit" style={{ backgroundColor: "#3E4095", borderColor: "#3E4095" }}>Registrar Instituição</Button>
       </Form>
     </Container>
   );

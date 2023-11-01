@@ -24,12 +24,12 @@ body {
   }
   
   .pagination .page-item.active .page-link {
-    background-color: #85BB32;
-    border-color: #85BB32;
+    background-color: #3E4095;
+    border-color: #3E4095;
   }
   
   .pagination .page-link {
-    color: #85BB32;
+    color: #3E4095;
   }
   
   div > .btn {
