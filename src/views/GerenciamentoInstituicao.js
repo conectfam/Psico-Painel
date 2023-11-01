@@ -87,7 +87,7 @@ const GerenciamentoInstituicoes = () => {
 
     try {
       const response = await axios.put(
-        `https://hungry-fawn-bandanna.cyclic.app/instituicoes/${selectedInstituicao.instituicaoNome}`, // Usando o nome da instituição como identificador
+        `https://bored-cuff-links-foal.cyclic.app/instituicoes/${selectedInstituicao.instituicaoNome}`, // Usando o nome da instituição como identificador
         dataToSave
       );
 
@@ -108,7 +108,7 @@ const GerenciamentoInstituicoes = () => {
 
   const handleDeleteInstituicao = async (id) => {
     try {
-      const response = await axios.delete(`https://hungry-fawn-bandanna.cyclic.app/instituicoes/${id}`);
+      const response = await axios.delete(`https://bored-cuff-links-foal.cyclic.app/instituicoes/${id}`);
       if (response.status === 200) {
         // Remover a instituição excluída da lista usando o ID
         const updatedInstituicoes = instituicoes.filter(instituicao => instituicao.id !== id);
@@ -138,7 +138,7 @@ const GerenciamentoInstituicoes = () => {
   }, []);
 
   const carregarInstituicoes = () => {
-    axios.get('https://hungry-fawn-bandanna.cyclic.app/instituicoes')
+    axios.get('https://bored-cuff-links-foal.cyclic.app/instituicoes')
       .then(response => {
         setInstituicoes(response.data);
       })
@@ -149,7 +149,7 @@ const GerenciamentoInstituicoes = () => {
 
   const carregarDetalhesInstituicao = (instituicaoId) => {
     const fetchDetails = async (endpoint) => {
-      const response = await axios.get(`https://hungry-fawn-bandanna.cyclic.app${endpoint}?instituicaoId=${instituicaoId}`);
+      const response = await axios.get(`https://bored-cuff-links-foal.cyclic.app${endpoint}?instituicaoId=${instituicaoId}`);
       return response.data;
     };
   

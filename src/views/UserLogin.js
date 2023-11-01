@@ -40,7 +40,7 @@ const Login = () => {
     e.preventDefault();
   
     axios
-      .post("https://hungry-fawn-bandanna.cyclic.app/api/user/login", {
+      .post("https://bored-cuff-links-foal.cyclic.app/api/user/login", {
         Email: email,
         senha: senha,
       })
@@ -89,7 +89,7 @@ const Login = () => {
       <Col md={{ span: 6, offset: 3 }}>
         <Card>
         <Card.Body>
-          <img src="https://imgur.com/F7oe830.png" style={{ width: '80%', height: 'auto', marginBottom: '5px' }} alt="logo" />
+          <center><img src="https://imgur.com/F7oe830.png" style={{ width: '80%', height: 'auto', marginBottom: '5px' }} alt="logo" /></center>
           <hr style={{ borderTop: '1px solid #ccc', marginBottom: '20px' }} />
           <Card.Header as="h5" className="text-center">Painel Paciente</Card.Header>
           <div style={{ height: '20px' }}></div>

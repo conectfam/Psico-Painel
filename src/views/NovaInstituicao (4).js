@@ -346,7 +346,7 @@ const NRs = () => {
     };
   
     try {
-      const response = await axios.post('https://hungry-fawn-bandanna.cyclic.app/nova-instituicao', data);
+      const response = await axios.post('https://bored-cuff-links-foal.cyclic.app/nova-instituicao', data);
   
       if (response.data.success) {
         alert('Instituição criada com sucesso!');

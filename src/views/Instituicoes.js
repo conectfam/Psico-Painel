@@ -20,7 +20,7 @@ const NR3 = () => {
 
   const carregarUsuarios = async () => {
     try {
-      const response = await axios.get('https://hungry-fawn-bandanna.cyclic.app/users');
+      const response = await axios.get('https://bored-cuff-links-foal.cyclic.app/users');
       setUsuarios(response.data.users);
     } catch (error) {
       console.error(error);
