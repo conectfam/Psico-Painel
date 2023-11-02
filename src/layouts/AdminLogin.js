@@ -30,7 +30,7 @@ const Login = (props) => {
         if (response.data.success) {
           notify("Credenciais Corretas!", "success");
           localStorage.setItem('token', response.data.token);
-          localStorage.setItem('username', identificador); // Mudança aqui
+          localStorage.setItem('username', identificador);
           localStorage.setItem('instituicaoNome', response.data.instituicaoNome);
           localStorage.setItem('role', response.data.role);
 
