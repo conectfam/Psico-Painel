@@ -31,7 +31,7 @@ const Login = (props) => {
           notify("Credenciais Corretas!", "success");
           localStorage.setItem('token', response.data.token);
           localStorage.setItem('username', identificador); // Mudança aqui
-          localStorage.setItem('instituicaoNome', response.data.instituicaonome);
+          localStorage.setItem('instituicaoNome', response.data.instituicaoNome);
           localStorage.setItem('role', response.data.role);
 
           console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
@@ -68,7 +68,7 @@ const Login = (props) => {
           <div style={{ height: '20px' }}></div>
         </div>
         <form onSubmit={handleLogin} className={styles.form}>
-          <input type="text" value={identificador} onChange={(e) => setIdentificador(e.target.value)} placeholder="E-Mail Identificador" className={styles.input}/> {/* Mudança aqui */}
+          <input type="text" value={identificador} onChange={(e) => setIdentificador(e.target.value)} placeholder="E-Mail" className={styles.input}/> {/* Mudança aqui */}
           <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className={styles.input}/>
           <button type="submit" className={styles.button}>Login</button>
         </form>
