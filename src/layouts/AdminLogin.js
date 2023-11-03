@@ -29,10 +29,12 @@ const Login = (props) => {
 
         if (response.data.success) {
           notify("Credenciais Corretas!", "success");
+          localStorage.setItem('instituicaoNome', response.data.instituicaoNome);
           localStorage.setItem('token', response.data.token);
           localStorage.setItem('username', identificador);
-          localStorage.setItem('instituicaoNome', response.data.instituicaoNome);
+          console.log('Instituição Nome:', response.data.instituicaoNome);
           localStorage.setItem('role', response.data.role);
+          console.log('Instituição Nome:', response.data.instituicaoNome);
 
           console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
 

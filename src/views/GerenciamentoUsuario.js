@@ -19,11 +19,12 @@ const NR2 = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = usuarios.slice(indexOfFirstItem, indexOfLastItem);
 
-const columns = [
-    'NomeCompleto', 'Email', 'Data_de_Nascimento', 'Genero', 'Telefone', 'Telefone2', 'CPF', 'CNPJ',
-    'Matricula', 'Observacoes', 'Endereco', 'Numero', 'Complemento', 'Bairro', 'Cidade', 'Estado',
-    'Pais', 'CEP', 'Unidade', 'Setor', 'Cargo', 'Instituicao', 'senha', 'Acesso'
+  const columns = [
+    'nomecompleto', 'email', 'data_de_nascimento', 'genero', 'telefone', 'telefone2', 'cpf', 'cnpj',
+    'matricula', 'observacoes', 'endereco', 'numero', 'complemento', 'bairro', 'cidade', 'estado',
+    'pais', 'cep', 'unidade', 'setor', 'cargo', 'instituicao', 'senha', 'acesso'
   ];
+  
 
 
   
@@ -36,7 +37,8 @@ const columns = [
     const instituicaoNome = localStorage.getItem('instituicaoNome');
 
     // Make API request with the institution name as a parameter
-    axios.get(`https://bored-cuff-links-foal.cyclic.app/usuarios?instituicaoNome=${instituicaoNome}`)
+    axios.get(`https://bored-cuff-links-foal.cyclic.app/usuarios?instituicaoNome=${encodeURIComponent(instituicaoNome)}`)
+
     .then(response => {
         if (response.data && Array.isArray(response.data)) {
             setUsuarios(response.data);
@@ -72,7 +74,7 @@ const columns = [
   
 
 const handleSave = () => {
-  // ... (seu código para salvar o usuário)
+  
   
   
     axios.put(`https://bored-cuff-links-foal.cyclic.app/cadastro_clientes/${editData.id}`, editData)
@@ -130,8 +132,9 @@ const handleSave = () => {
         <tbody>
           {currentItems.map((usuario, index) => (
             <tr key={index} onClick={() => handleUserSelection(indexOfFirstItem + index)} className="clickable-row">
-              <td>{usuario.NomeCompleto}</td>
+              <td>{usuario.nomecompleto}</td>
             </tr>
+            
           ))}
         </tbody>
       </Table>
@@ -151,29 +154,30 @@ const handleSave = () => {
           <Col md={12} className="form-col rounded">
             <Table striped bordered hover>
               <tbody>
-                {columns.map((column, colIndex) => (
-                  <tr key={colIndex}>
-                    <th>{column}</th>
-                    <td>
-                      {editIndex === selectedUser ? (
-                        column === "Acesso" ? (
-    <Form.Control as="select" value={editData[column] || ''} onChange={e => handleChange(e, column)}>
-      <option value="Paciente">Paciente</option>
-      <option value="Médico">Médico</option>
-    </Form.Control>
-  ) : (
-    <Form.Control
-      type="text"
-      value={editData[column] || ''}
-      onChange={e => handleChange(e, column)}
-    />
-  )
+              {columns.map((column, colIndex) => (
+                <tr key={colIndex}>
+                  <th>{column.charAt(0).toUpperCase() + column.slice(1)}</th>
+                  <td>
+                    {editIndex === selectedUser ? (
+                      column === "acesso" ? (
+                        <Form.Control as="select" value={editData[column] || ''} onChange={e => handleChange(e, column)}>
+                          <option value="Paciente">Paciente</option>
+                          <option value="Médico">Médico</option>
+                        </Form.Control>
                       ) : (
-                        usuarios[selectedUser][column]
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                        <Form.Control
+                          type="text"
+                          value={editData[column] || ''}
+                          onChange={e => handleChange(e, column)}
+                        />
+                      )
+                    ) : (
+                      usuarios[selectedUser] && usuarios[selectedUser][column] // Certifique-se de que 'column' corresponde à chave no objeto 'usuario'
+                    )}
+                  </td>
+                </tr>
+              ))}
+
               </tbody>
             </Table>
             {editIndex === selectedUser ? (

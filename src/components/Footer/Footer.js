@@ -27,7 +27,7 @@ class Footer extends Component {
             
             <p className="copyright text-center">
               © {new Date().getFullYear()}{" "}
-              <a>ConnectFam </a>Desenvolvido por ConnectFam Versão 2.6 | 2023 
+              <a>| PsicoFam </a>Desenvolvido por ConnectFam Versão 2.6 
             </p>
           </nav>
         </Container>

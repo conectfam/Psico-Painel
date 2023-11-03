@@ -60,7 +60,7 @@ function Register() {
       <div className={styles.content}>
         <div className={styles.title}>
           <img src={icon} alt="Icon" className={styles.icon} />
-          QSLib | QualitySEG Painel 
+          PsicoFam | Psicossocial
         </div>
         <form onSubmit={handleRegister} className={styles.form}>
         <label>
