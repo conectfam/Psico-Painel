@@ -44,11 +44,11 @@ const NR3 = () => {
   };
 
   // Filtragem de usuários
-  const filteredUsuarios = (usuarios || []).filter(usuario => 
-    usuario.NomeCompleto.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    usuario.Email.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredUsuarios = (usuarios || []).filter(usuario =>
+    (usuario.nomecompleto && usuario.nomecompleto.toLowerCase().includes(searchTerm.toLowerCase())) ||
+    (usuario.email && usuario.email.toLowerCase().includes(searchTerm.toLowerCase()))
   );
-
+  
   // Renderização do componente
   return (
     <Container fluid className="d-flex flex-column align-items-center">
@@ -88,18 +88,18 @@ const NR3 = () => {
               <tbody>
                 {filteredUsuarios.map(usuario => (
                   <tr key={usuario.id}>
-                    <td>{usuario.NomeCompleto}</td>
-                    <td>{usuario.Email}</td>
+                    <td>{usuario.nomecompleto}</td>
+                    <td>{usuario.email}</td>
                     <td>
-                      {usuario.Acesso && usuario.Acesso.includes('Paciente') && (
+                      {usuario.acesso && usuario.acesso.includes('Paciente') && (
                         <img
                           src="https://imgur.com/gu41gtn.png" alt="Paciente" style={{ width: '24px', height: '24px', marginRight: '5px' }} title="Paciente"/>
                       )}
-                      {usuario.Acesso && usuario.Acesso.includes('Admin') && (
+                      {usuario.acesso && usuario.acesso.includes('Admin') && (
                         <img
                           src="https://imgur.com/42Dk9YN.png" alt="Administrador" style={{ width: '24px', height: '24px', marginRight: '5px' }} title="Administrador"/>
                       )}
-                      {usuario.Acesso && usuario.Acesso.includes('Medico') && (
+                      {usuario.acesso && usuario.acesso.includes('Medico') && (
                         <img
                           src="https://imgur.com/Pa2cWcB.png" alt="Medico" style={{ width: '24px', height: '24px', marginRight: '5px' }} title="Médico"/>
                       )}
