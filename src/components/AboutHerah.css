@@ -1,0 +1,33 @@
+/* AboutHerah.css */
+
+.aboutHerah__image {
+    width: auto; /* A largura será ajustada automaticamente para manter a proporção da imagem */
+    height: 500px; /* Define a altura da imagem como 500px */
+    background-size: contain; /* A imagem será redimensionada para se ajustar dentro do elemento, mantendo sua proporção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.aboutHerah__content {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #666;
+}
+
+.aboutHerah__content p {
+    margin-bottom: 1.5rem;
+}
+
+.aboutHerah__content h2 {
+    color: #3E4095;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .aboutHerah__content {
+        padding: 1rem;
+    }
+}

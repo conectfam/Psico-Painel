@@ -1,0 +1,51 @@
+/* ContentBody.css */
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif; /* Fonte aplicada aqui */
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #333333;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Fonte aplicada aqui */
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card {
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #444; /* Bordas sutis para os cartões */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+  /* Cor de fundo para o Container */
+.content-body-container {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background-color: rgba(62, 64, 149, 0.6); /* Cor com transparência */
+    padding: 20px 0;
+}
+
+/* Centralizando os Cards e ajustando as margens */
+.row {
+justify-content: center;
+}
+
+@media (min-width: 992px) { /* Ajustando para telas grandes */
+.content-body-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}

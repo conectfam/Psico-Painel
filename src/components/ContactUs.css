@@ -1,0 +1,173 @@
+html, body {
+  overflow-x: hidden;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-banner-container {
+  position: relative;
+  width: 100%;
+}
+
+.contact-banner {
+  width: auto; /* A largura será ajustada automaticamente para manter a proporção da imagem */
+    height: 500px; /* Define a altura da imagem como 500px */
+    background-size: contain; /* A imagem será redimensionada para se ajustar dentro do elemento, mantendo sua proporção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2em;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 150px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+  opacity: 1;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-image {
+  width: auto; /* A largura será ajustada automaticamente para manter a proporção da imagem */
+    height: 500px; /* Define a altura da imagem como 500px */
+    background-size: contain; /* A imagem será redimensionada para se ajustar dentro do elemento, mantendo sua proporção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px; /* Adicionado espaçamento de 100px */
+}
+
+.contact-title {
+  font-size: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 1em; /* Adicionado espaçamento inferior */
+  flex-basis: 100%;
+  text-align: left;
+}
+
+.whatsapp-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 1;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  width: 100%;
+  max-width: 800px;
+  margin-left:100px;
+}
+
+.whatsapp-button {
+  max-width: 300px;
+  text-align: center;
+  display: inline-block;
+  background-color: #3E4095;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-banner {
+    max-height: 200px;
+  }
+
+  .contact-section {
+    flex-direction: column; /* Modificado para empilhar os elementos */
+    align-items: center; /* Centralizado verticalmente */
+    margin-left: 0; /* Removido espaçamento lateral em telas menores */
+  }
+
+  .contact-details {
+    margin-left: 0; /* Removido espaçamento lateral */
+    margin-top: 1em; /* Adicionado espaçamento superior */
+    text-align: center; /* Centralizado horizontalmente */
+  }
+
+  .whatsapp-section {
+    margin-left: 120px; /* Removido espaçamento lateral */
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation-name: fade-in-left;
+}
+
+.fade-in-right {
+  animation-name: fade-in-right;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

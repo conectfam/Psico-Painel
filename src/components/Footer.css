@@ -1,0 +1,32 @@
+.footer-bg {
+  margin-top: 50px;
+
+}
+.footer-bar-1 {
+  margin-top: 50px;
+  background-color: #3E4095;
+  height: 30px;
+}
+
+.footer-bar-2 {
+  background-color: #141531;
+  display: flex;
+  justify-content: center; /* Alinhar horizontalmente ao centro */
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-image {
+  max-width: 100%;
+  height: auto; /* Garantir que a imagem seja responsiva */
+}
+
+.footer-bar-3 {
+  background-color: #0D0E20;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+}

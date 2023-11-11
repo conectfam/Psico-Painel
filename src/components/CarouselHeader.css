@@ -1,0 +1,113 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: auto;
+    max-height: 600px;
+    margin-top: -8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.slick-slide:hover img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.slick-dots li button:before {
+    color: #007bff;
+}
+
+.slick-prev, .slick-next {
+    color: #000;
+    filter: brightness(0.5);
+}
+
+.contact-button {
+    position: absolute;
+    font-weight: bold;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #3E4095;
+    color: white;
+    border: 4px solid #7E7FB8;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #141531;
+    color: #3E4095;
+}
+
+@media (max-width: 480px) {
+    .slick-slide img {
+      height: 400px;
+    }
+  
+    .contact-button {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+}
+
+/* Adicionando estilo para o texto e logo */
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+  animation: fadeInCenter 1.5s ease-in-out;
+}
+
+.carousel-heading {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    margin: 0;
+}
+
+.carousel-logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Animação de surgimento */
+@keyframes fadeInCenter {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    margin-top: -1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-heading {
+    font-size: 30px;
+  }
+
+  .carousel-logo {
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,38 @@
+/* MobileMenu.css */
+.mobile-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00464E;
+    width: 100%;
+    border-radius: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    outline: none;
+    transition: transform 300ms ease;
+  }
+  
+  .mobile-modal.entering {
+    transform: translateY(-100%);
+  }
+  
+  .mobile-modal.entered {
+    transform: translateY(0);
+  }
+  
+  .mobile-modal.exiting {
+    transform: translateY(-100%);
+  }
+  
+  .mobile-modal.exited {
+    transform: translateY(-100%);
+  }
+  
+  .modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  

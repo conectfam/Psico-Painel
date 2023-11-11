@@ -1,0 +1,78 @@
+/* Header.css */
+.header {
+  background: linear-gradient(to right, rgba(62, 64, 149, 0.8), rgba(126, 127, 184, 0.8), rgba(62, 64, 149, 0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 10000; /* Valor alto para garantir que fique na frente */
+}
+
+.header button.menu-button {
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 30px;
+  background: none;
+  border: none;
+}
+
+.header button span {
+  font-size: 18px;
+}
+
+.header nav ul.mobile {
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #141531;
+  padding: 10px;
+  border-radius: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.header nav ul.desktop {
+  margin-top: 15px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .header nav ul.desktop {
+    display: none;
+  }
+}
