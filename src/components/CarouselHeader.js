@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'; // Importe useHistory
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +7,13 @@ import './CarouselHeader.css'; // Importe o arquivo CSS para personalizações a
 import logoImage from '../images/logo.png'; // Importe a imagem do logo
 
 const CarouselHeader = () => {
+  const history = useHistory(); // Crie a instância de useHistory
+
+  // Função para lidar com o clique no botão
+  const handleButtonClick = () => {
+    history.push('/login'); // Redireciona para a rota /login
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -23,7 +31,7 @@ const CarouselHeader = () => {
         <h1 className="carousel-heading">Avaliação Psicossocial ONLINE</h1>
         <img src={logoImage} alt="PSICOFAM" className="carousel-logo" />
       </div>
-      <button className="contact-button">É UM PACIENTE? ACESSE O PAINEL</button>
+      <button className="contact-button" onClick={handleButtonClick}>É UM PACIENTE? ACESSE O PAINEL</button>
       <Slider {...settings}>
         {/* Exemplos de slides */}
         <div>
