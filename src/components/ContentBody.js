@@ -6,12 +6,12 @@ const ContentBody = () => {
   const cardInfo = [
   
     {
-      title: "PSICOFAM psicossocial",
+      title: "PSICOFAM Psicossocial",
       text: "Os colaboradores realizam as avaliações na plataforma PSICOFAM criando padronização, escalabilidade e poder de predição de risco com maior acurácia.",
       img: "https://imgur.com/npAmXji.png"
     },
     {
-      title: "PSICOFAM tracking",
+      title: "PSICOFAM Tracking",
       text: "Monitorização de eventos e acidentes para retroalimentação da plataforma e melhoria do algoritmo de predição de risco com ferramentas de I.A.",
       img: "https://imgur.com/aCfjjn2.png"
     },
