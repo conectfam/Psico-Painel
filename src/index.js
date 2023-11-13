@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import * as gtag from "../lib/gtag";
+
 
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
