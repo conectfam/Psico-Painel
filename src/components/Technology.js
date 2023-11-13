@@ -6,7 +6,7 @@ import PsicoAppImage from '../images/Psico-app.png'; // Importando a imagem
 function Technology() {
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.5  // Ajuste conforme necessário
+        threshold: 0.1 // Ajuste conforme necessário
     });
 
     return (
