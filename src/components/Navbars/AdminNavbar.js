@@ -3,6 +3,8 @@ import { useLocation, useHistory  } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 import routes from "routes.js";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGears } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const location = useLocation();
@@ -61,13 +63,23 @@ function Header() {
           
           <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
 
-            <Button
-              variant="dark"
-              className="d-lg-none btn-fill d-flex justify-content-center align-items-center rounded-circle p-2"
-              onClick={mobileSidebarToggle}
-            >
-              <i className="fas fa-ellipsis-v"></i>
-            </Button>
+          <Button
+            variant="dark"
+            className="d-lg-none d-flex justify-content-center align-items-center"
+            onClick={mobileSidebarToggle}
+            style={{
+              backgroundColor: 'rgba(62, 64, 149, 0.5)',
+              border: 'none',
+              padding: '15px', 
+              borderRadius: '20%'  
+            }}
+          >
+            <FontAwesomeIcon icon={faGears} style={{ color: "#0d0e20", fontSize: '25px' }} /> 
+          </Button>
+
+
+
+
             
             <Navbar.Brand
               href="#home"
