@@ -69,6 +69,22 @@ const Dashboard = () => {
           </BootstrapCard>
         </Col>
       </Row>
+      <Col xs={12} className="mb-4">
+          <BootstrapCard className="text-center card-btn h-100">
+            <BootstrapCard.Body>
+              {/* Substitua a tag div abaixo pela tag iframe do Zoho Forms */}
+              <div>
+                <iframe
+                  title="RELATÓRIO DE INSPEÇÃO NR11"
+                  frameBorder="0"
+                  allow="camera;"
+                  style={{ height: '500px', width: '100%', border: 'none' }}
+                  src='https://forms.zohopublic.com/conectfam/form/RELATRIODEINSPEO/formperma/PxNG-WerpY0eIlBOnM38kcINWdyljDpqjqutJRbsqxs?zf_enablecamera=true'
+                ></iframe>
+              </div>
+            </BootstrapCard.Body>
+          </BootstrapCard>
+        </Col>
     </Container>
   );
 }
