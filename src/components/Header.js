@@ -19,7 +19,7 @@ const Header = () => {
     <ul className={isMobile ? "mobile" : "desktop"}>
        
 
-      <p><img src={TechImage} alt="Psico App" className="technology__image" /> </p>
+      <p><img src={TechImage} alt="Psico App" /> </p>
       <li><a href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Inicio</a></li>
       <li><a href="/contato" onClick={(e) => { e.preventDefault(); scrollToContact(); }}>Fale Conosco</a></li>
       <li><Link to="/login">Login</Link></li>
