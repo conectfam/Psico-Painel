@@ -75,11 +75,11 @@ const Dashboard = () => {
               {/* Substitua a tag div abaixo pela tag iframe do Zoho Forms */}
               <div>
                 <iframe
-                  title="RELATÓRIO DE INSPEÇÃO NR11"
+                  title="ANALISE DE RESULTADOS"
                   frameBorder="0"
                   allow="camera;"
                   style={{ height: '500px', width: '100%', border: 'none' }}
-                  src='https://forms.zohopublic.com/conectfam/form/RELATRIODEINSPEO/formperma/PxNG-WerpY0eIlBOnM38kcINWdyljDpqjqutJRbsqxs?zf_enablecamera=true'
+                  src='https://app.powerbi.com/view?r=eyJrIjoiNGUzY2E4NDEtYWVhZS00NjU5LWE4NjYtYTBkYWMwMmU4NmM2IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9'
                 ></iframe>
               </div>
             </BootstrapCard.Body>
